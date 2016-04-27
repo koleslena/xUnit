@@ -12,8 +12,6 @@ class TestCase:
         self.tearDown()
 
 class WasRun(TestCase):
-    def __init__(self, name):
-        TestCase.__init__(self, name)
     def setUp(self):
         self.log="setUp "
     def testMethod(self):
