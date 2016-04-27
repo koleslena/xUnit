@@ -27,7 +27,7 @@ class TestCaseTest(TestCase):
     def testResult(self):
         test=WasRun("testMethod")
         result=test.run()
-        assert("1 run, o failed" == result)
+        assert("1 run, o failed" == result.summary())
 
 TestCaseTest("testTemplateMethod").run()
 TestCaseTest("testResult").run()
